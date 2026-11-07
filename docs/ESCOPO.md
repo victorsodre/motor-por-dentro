@@ -15,15 +15,15 @@ Um cilindro de um motor quatro tempos de tipo declarado, com pistão, biela, vir
 - Válvulas e comando
 - Caminhos de admissão e escape
 
-Esses grupos são uma proposta semântica; validar sua correspondência com a geometria e as fontes antes de nomear peças como reais.
+Implementado em oito grupos: block, piston, rod, crank, intake, exhaust, timing e spark. Admissão/escape incluem seus caminhos e válvulas; comando/sincronismo e vela têm seleção própria. Geometria autoral, sem promessa de réplica industrial.
 
 ## Ações principais
 
-| Controle | Comportamento planejado |
+| Controle | Comportamento entregue |
 |---|---|
-| Girar o eixo | Percorre o ciclo com controle contínuo e pausa. |
-| Ver etapas | Seleciona uma fase e mostra o que muda no conjunto. |
-| Abrir e desmontar | Alterna corte e vista de conjuntos separados, sem perder a pose de referência. |
+| Girar o eixo | Ângulo 0–720°, pausa e repetição contínua; velocidades didáticas 0,5×, 1× e 2×. |
+| Ver etapas | Admissão, compressão, expansão e escape; atalho para centelha em 360°. |
+| Abrir e desmontar | Corte e separação 0–100%; separar pausa e remontar preserva o ângulo. |
 
 Base de exploração: órbita, zoom, seleção por lista ou clique, isolamento, reenquadrar e reset. Desmontagem e corte só se aplicam aos conjuntos para os quais forem úteis e tecnicamente coerentes. Som, malha e captura são complementos, posteriores à clareza do mecanismo.
 
@@ -47,3 +47,7 @@ Base de exploração: órbita, zoom, seleção por lista ou clique, isolamento, 
 - Turbo, diesel e motor boxer na mesma primeira versão.
 
 Ampliações entram no backlog após o piloto, com evidência de uso e esforço. Não incluir funcionalidades só para repetir todas as opções do Fusquinha.
+
+## Aceite em 07/11/2026
+
+Critérios atendidos em testes e navegador. A distância entre pinos e o contato came/seguidor são verificados numericamente; a geometria e a desmontagem foram conferidas em cena real. Inicial/reset em 90°, com admissão visível e mecanismo parado. Evidência e limites em VALIDACAO.md. Sem simulação de torque ou gases e sem publicação pública.

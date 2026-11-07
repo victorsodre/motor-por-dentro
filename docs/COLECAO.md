@@ -1,6 +1,6 @@
 # Coleção de experiências interativas — ovictorlab
 
-Planejamento de 07/11/2026. Dez projetos independentes; documentação inicial, sem aplicação implementada ou publicada nesta entrega.
+Ordem editorial definida em 07/11/2026. O estado atual deste projeto está no README e em VALIDACAO.md.
 
 O produto combina a identidade de ovictorlab.com com exploração, seleção, isolamento, desmontagem, movimento e som inspirados no Fusquinha. A ordem abaixo é uma recomendação, não um cronograma contratado.
 
@@ -24,7 +24,7 @@ O produto combina a identidade de ovictorlab.com com exploração, seleção, is
 3. Voyager: seleção de instrumentos e expansão para astronomia.
 4. Reavaliar os demais com resultados do piloto e disponibilidade de modelos/dados.
 
-Não trabalhar nos dez aplicativos ao mesmo tempo. O trabalho autorizado nesta rodada é a documentação, seu envio ao GitHub e o registro no VicMind. Desenvolvimento, site no ar e posts no X são etapas posteriores.
+Victor autorizou posteriormente concluir os dez aplicativos em lotes verificáveis. Caminhão, Oleoduto, Voyager, Tatuzão e Motor por dentro já têm versões locais validadas. Publicação pública e posts no X continuam posteriores.
 
 ## Evidência e limites
 

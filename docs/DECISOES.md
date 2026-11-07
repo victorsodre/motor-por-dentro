@@ -8,12 +8,18 @@
 - Repositório inicialmente privado por escolha operacional conservadora nesta fase. O pedido autoriza o envio dos guias; não foi tratado como solicitação de implementar e publicar os aplicativos.
 - Nenhuma postagem no X enviada. Textos de protótipo e lançamento têm condições explícitas de uso.
 
-## Pendências técnicas
+## 2026-11-07 — implementação e aceite local
 
-- Diagrama e manual didático de um único tipo de motor.
-- Validar diagrama de fases e simplificações de válvulas antes de ensinar por animação.
+O pedido posterior de desenvolver todos os projetos autorizou a aplicação. A limitação inicial a documentos foi substituída para desenvolvimento; publicação continua fora desta rodada.
 
-Próxima ação: Fixar o tipo de motor e provar o mecanismo com geometria simples e ângulo único.
+- Um cilindro, centelha, quatro tempos e comando no cabeçote; geometria autoral. OHC genérico, sem copiar OHV Briggs ou configuração histórica Wright.
+- Ângulo único 0–720°, slider-crank exato, comando 2:1 e came/seguidor com contato verificado. Válvulas idealizadas sem cruzamento, centelha em 360°.
+- Desmontagem por poses de origem; pausa e preservação do ângulo ao remontar. Gases coloridos indicam fase/caminho, não pressão ou vazão.
+- Marca oficial, fontes locais e oito grupos. Corte, isolamento, tour, malha, tela cheia, PNG horizontal/vertical. Áudio dispensado para não sugerir RPM real.
+- Oito testes, 105 verificações Chrome e build em subpasta aprovados. Celular emulado; sem teste em aparelho físico ou homologação de engenharia.
+- Guias e rascunho de bastidor atualizados. Nenhuma postagem enviada; sem deploy.
+
+Próximo da coleção: Amazonas em camadas. Evidência canônica em VALIDACAO.md.
 
 ## Como registrar mudanças
 

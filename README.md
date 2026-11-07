@@ -1,6 +1,6 @@
 # Motor por dentro
 
-> **Estado: documentação inicial.** Aplicação ainda não implementada. Planejamento criado em 2026-11-07; prioridade recomendada 5/10.
+> **Desenvolvimento concluído e validado localmente em 07/11/2026.** Aplicação estática pronta para revisão; repositório privado, sem deploy público. Quinto projeto da coleção.
 
 **Como o movimento dentro do cilindro chega ao eixo?**
 
@@ -26,10 +26,31 @@ No YouTube, o Short sobre ar no sistema diesel tinha 7.858 visualizações e o d
 7. [Decisões e estado do projeto](docs/DECISOES.md).
 8. [Textos para o X](POSTAGENS-X.md) e [ordem da coleção](docs/COLECAO.md).
 
-**Próxima ação:** Fixar o tipo de motor e provar o mecanismo com geometria simples e ângulo único.
+## Versão entregue
 
-**Esforço relativo:** Médio/alto: rig cinemático e apuração técnica são o núcleo. Prazo só deve ser estimado depois da validação de modelo e fontes.
+Motor educativo de quatro tempos, ignição por centelha e comando no cabeçote. Oito conjuntos autorais, um controle de 0–720°, quatro fases, três velocidades didáticas, corte, desmontagem reversível e pausa. Pistão, biela, eixo, cames e válvulas derivam do mesmo ângulo.
 
-## O que esta entrega inclui
+Busca, seleção na lista/cena, isolamento, foco, tour, malha, tela cheia e PNG 16:9/9:16 completam a exploração. O vídeo de turbo é um tema relacionado do canal; turbo e diesel não fazem parte do mecanismo desta versão.
 
-Guias de desenvolvimento e manutenção, identidade visual, limites de escopo e rascunhos de divulgação. Não há aplicação, modelo 3D novo, licença de asset adquirida ou site publicado. Os repositórios foram preparados para trabalho independente, inicialmente privado. Não existe `npm install`, `npm test` ou deploy a executar nesta fase.
+## Executar
+
+Node.js 22.18 ou superior; versões exatas no lockfile.
+
+```sh
+npm ci
+npm run dev
+npm test
+npm run check
+npm run build
+npm run preview
+```
+
+`dev`: http://127.0.0.1:4311/ . `preview` informa a porta. Build estático em `dist/`, com base relativa e subpasta conferida. Não há backend, LLM, credenciais ou uso da GPU de produção.
+
+## Evidências e limites
+
+[APURACAO.md](docs/APURACAO.md) registra fontes primárias, geometria e simplificações. [VALIDACAO.md](docs/VALIDACAO.md) registra oito testes, 105 verificações de navegador e imagens inspecionadas. Validação móvel por viewport no Chrome do Mac; não houve ensaio em telefone físico.
+
+A experiência não calcula combustão, pressão, torque, potência ou diagnóstico. Levantamentos, dimensões e velocidade são ilustrativos; centelha em 360° e válvulas sem cruzamento. Não é réplica de um motor comercial.
+
+Guias de manutenção e identidade permanecem em `docs/`. Publicação e divulgação são etapas posteriores; [POSTAGENS-X.md](POSTAGENS-X.md) contém rascunhos condicionados ao estado real.

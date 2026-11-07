@@ -12,10 +12,10 @@ O próximo passo da oficina do ovictorlab é deixar o motor aberto: pistão, bie
 
 ## Bastidor
 
-Condição/mídia: Usar somente depois de existir o protótipo descrito. Anexar captura real da interação; ajustar o texto ao que efetivamente funcionar.
+Condição/mídia: Versão local implementada e validada em 07/11/2026. Anexar captura real; ainda não há URL pública para experimentar.
 
 ```text
-Uma animação de motor só ajuda se as peças concordarem entre si. Neste protótipo, um único controle move o eixo e organiza o restante do ciclo. Dá para avançar devagar e observar cada etapa.
+O motor do ovictorlab já tem pistão, biela, eixo e válvulas sincronizados. Dá para voltar no ciclo e separar os conjuntos sem perder a pose. São quatro tempos em duas voltas do eixo. A versão local está pronta; publicação vem depois.
 ```
 
 ## Lançamento
