@@ -65,4 +65,4 @@ npm run preview
 
 A experiência não calcula combustão, pressão, torque, potência ou diagnóstico. Levantamentos, dimensões e velocidade são ilustrativos; centelha em 360° e válvulas sem cruzamento. Não é réplica de um motor comercial.
 
-Guias de manutenção e identidade permanecem em `docs/`. Publicação e divulgação são etapas posteriores; [POSTAGENS-X.md](POSTAGENS-X.md) contém rascunhos condicionados ao estado real.
+Guias de manutenção e identidade permanecem em `docs/`. Aplicação publicada no GitHub Pages, com vídeo incorporado; [POSTAGENS-X.md](POSTAGENS-X.md) contém rascunhos para publicação manual por Victor.
