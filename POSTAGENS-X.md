@@ -2,12 +2,12 @@
 
 Rascunhos para Victor publicar posteriormente. **Nada foi enviado.** Público: pessoas curiosas sobre engenharia/ciência e quem acompanha a construção dos projetos. Um assunto por post, sem métricas privadas ou promessa de data.
 
-## Planejamento
+## Apresentação do projeto
 
-Condição/mídia: Pode ser usado para anunciar a intenção. Mostrar esquema identificado como plano ou referência do Fusquinha.
+Condição/mídia: Versão local concluída. Anexar captura real; o texto não anuncia uma URL pública.
 
 ```text
-O próximo passo da oficina do ovictorlab é deixar o motor aberto: pistão, biela, eixo e válvulas sob seu controle. O plano começa com um único ciclo bem explicado. Turbo e alimentação diesel ficam para os próximos módulos.
+Abri um motor de quatro tempos no laboratório do ovictorlab. Pistão, biela, eixo e válvulas seguem o mesmo ângulo: você pode avançar, voltar e separar os conjuntos. O ciclo é idealizado e a versão local está pronta.
 ```
 
 ## Bastidor
