@@ -4,10 +4,10 @@ Rascunhos para Victor publicar posteriormente. **Nada foi enviado.** Público: p
 
 ## Apresentação do projeto
 
-Condição/mídia: Versão local concluída. Anexar captura real; o texto não anuncia uma URL pública.
+Condição/mídia: Anexar captura real da experiência. URL: https://victorsodre.github.io/motor-por-dentro/
 
 ```text
-Abri um motor de quatro tempos no laboratório do ovictorlab. Pistão, biela, eixo e válvulas seguem o mesmo ângulo: você pode avançar, voltar e separar os conjuntos. O ciclo é idealizado e a versão local está pronta.
+O motor por dentro já está no ar: pistão, biela, virabrequim e válvulas em uma experiência 3D do ovictorlab. Controle as quatro fases e separe os conjuntos para seguir o movimento.
 ```
 
 ## Bastidor
@@ -15,15 +15,15 @@ Abri um motor de quatro tempos no laboratório do ovictorlab. Pistão, biela, ei
 Condição/mídia: Versão local implementada e validada em 07/11/2026. Anexar captura real; ainda não há URL pública para experimentar.
 
 ```text
-O motor do ovictorlab já tem pistão, biela, eixo e válvulas sincronizados. Dá para voltar no ciclo e separar os conjuntos sem perder a pose. São quatro tempos em duas voltas do eixo. A versão local está pronta; publicação vem depois.
+O motor do ovictorlab já tem pistão, biela, eixo e válvulas sincronizados. Dá para voltar no ciclo e separar os conjuntos sem perder a pose. São quatro tempos em duas voltas do eixo. A experiência já está disponível no navegador.
 ```
 
 ## Lançamento
 
-Condição/mídia: Usar somente depois de publicar e validar o aplicativo. Anexar demonstração real; responder com a URL pública exata. Não usar endereço privado de repositório como link para experimentar.
+Condição/mídia: Anexar demonstração real e abrir a URL pública para conferir antes de enviar.
 
 ```text
-O motor por dentro ficou pronto. Você controla o ciclo, pausa no ponto que quiser e explora as peças em corte. Link na resposta.
+O motor por dentro ficou pronto. Você controla o ciclo, pausa no ponto que quiser e explora as peças em corte. https://victorsodre.github.io/motor-por-dentro/
 ```
 
 ## Antes de colar no X
@@ -31,5 +31,5 @@ O motor por dentro ficou pronto. Você controla o ciclo, pausa no ponto que quis
 - Conferir se o tempo verbal corresponde ao estado real do projeto.
 - Validar duração, legibilidade e texto alternativo da mídia anexada.
 - Conferir o comprimento no compositor; os rascunhos não dependem de assinatura ou postagem longa.
-- Inserir link somente quando existir e puder ser aberto pelo público.
+- Abrir a URL pública acima antes de postar; conferir também em uma janela sem sessão.
 - Após publicar, registrar data e permalink aqui. Não automatizar envios a partir deste arquivo.

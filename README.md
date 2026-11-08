@@ -1,6 +1,8 @@
 # Motor por dentro
 
-> **Desenvolvimento concluído e validado localmente em 07/11/2026.** Aplicação estática pronta para revisão; repositório privado, sem deploy público. Quinto projeto da coleção.
+**[Abrir a experiência →](https://victorsodre.github.io/motor-por-dentro/)** · [Os 10 experimentos](docs/COLECAO.md) · [Publicação e manutenção](docs/PUBLICACAO.md)
+
+[![Motor por dentro — captura real da experiência](public/share.png)](https://victorsodre.github.io/motor-por-dentro/)
 
 **Como o movimento dentro do cilindro chega ao eixo?**
 
@@ -22,7 +24,7 @@ No YouTube, o Short sobre ar no sistema diesel tinha 7.858 visualizações e o d
 3. [Identidade visual do ovictorlab](docs/IDENTIDADE-VISUAL.md).
 4. [Arquitetura proposta e reaproveitamento do Fusquinha](docs/ARQUITETURA.md).
 5. [Assets, fontes e pendências de apuração](docs/ASSETS-E-FONTES.md).
-6. [Manutenção, validação e publicação futura](docs/MANUTENCAO.md).
+6. [Manutenção, validação e publicação](docs/MANUTENCAO.md).
 7. [Decisões e estado do projeto](docs/DECISOES.md).
 8. [Textos para o X](POSTAGENS-X.md) e [ordem da coleção](docs/COLECAO.md).
 
