@@ -10,6 +10,16 @@ Um cilindro de um motor quatro tempos de tipo declarado, com pistão, biela, vir
 
 Direção e autoria editorial: **Victor Sodré / ovictorlab**. [Site](https://ovictorlab.com/) · [Referência Fusquinha](https://victorsodre.github.io/fusquinha/) · [Repositório](https://github.com/victorsodre/motor-por-dentro).
 
+## Vídeo relacionado do canal
+
+<a href="https://www.youtube.com/watch?v=Cq8wFJlB6Gk"><img src="public/video-thumbnail.jpg" width="280" alt="Assistir: Como o turbo pode quase dobrar a força do motor 1.0? (até quase 300 mil voltas por minuto)" /></a>
+
+**[Como o turbo pode quase dobrar a força do motor 1.0? (até quase 300 mil voltas por minuto)](https://www.youtube.com/watch?v=Cq8wFJlB6Gk)**
+
+O vídeo explica o turbo. O experimento mostra a base do movimento em um motor de quatro tempos, sem simular o turbo.
+
+O player incorporado fica [na página do experimento](https://victorsodre.github.io/motor-por-dentro/#video), com carregamento por clique e sem reprodução automática.
+
 ## Por que desenvolver
 
 No YouTube, o Short sobre ar no sistema diesel tinha 7.858 visualizações e o de turbo, 3.667. São módulos futuros relacionados; o primeiro corte terá um único tipo de motor. Consulta em 07/11/2026. Métricas acumuladas são sinais de interesse; não comprovam demanda pelo aplicativo ou alcance orgânico.
