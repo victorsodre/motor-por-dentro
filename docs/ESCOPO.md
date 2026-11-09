@@ -4,7 +4,7 @@
 
 Como o movimento dentro do cilindro chega ao eixo? O visitante deve conseguir explicar o mecanismo depois de explorar a cena e acionar seus controles.
 
-Um cilindro de um motor quatro tempos de tipo declarado, com pistão, biela, virabrequim e válvulas. Turbo e alimentação diesel ficam em módulos posteriores, com sua própria apuração.
+Um cilindro de um motor quatro tempos de tipo declarado, com pistão, biela, virabrequim e válvulas. Turbo entra só como esquema ilustrativo (09/11/2026, ver DECISOES.md); alimentação diesel fica para um módulo posterior, com apuração própria.
 
 ## Conjuntos da primeira versão
 
@@ -44,7 +44,7 @@ Base de exploração: órbita, zoom, seleção por lista ou clique, isolamento, 
 ## Fora da primeira versão
 
 - Simulação de combustão, emissões, desempenho e diagnóstico de veículo real.
-- Turbo, diesel e motor boxer na mesma primeira versão.
+- Diesel e motor boxer na mesma primeira versão; turbo além do esquema (intercooler, wastegate, pressão, atraso).
 
 Ampliações entram no backlog após o piloto, com evidência de uso e esforço. Não incluir funcionalidades só para repetir todas as opções do Fusquinha.
 

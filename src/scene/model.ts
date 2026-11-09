@@ -1,9 +1,12 @@
 import * as T from 'three';
 import {box,mesh,mergeStatic,disposeTree} from './geometry.ts';
 import {catalog} from '../content/catalog.ts';
+import {createTurbo} from './turbo.ts';
 import {camPoint,CRANK_RADIUS,ROD_LENGTH} from '../simulation/engine.ts';
 import type {Port} from '../simulation/engine.ts';
 export const CAM_Y=6.05;
+/** Gap between the spark plug electrodes. */
+export const SPARK_GAP=new T.Vector3(.51,4.215,0);
 const material=(color:string,metalness=.45,roughness=.35)=>new T.MeshStandardMaterial({color,metalness,roughness});
 function ring(inner:number,outer:number,depth:number){
  const shape=new T.Shape();shape.absarc(0,0,outer,0,Math.PI*2,false);
@@ -124,10 +127,19 @@ export function createModel(){
  const gasMaterial=new T.MeshBasicMaterial({color:'#72b3d6',transparent:true,opacity:.14,depthWrite:false,side:T.DoubleSide});
  const gas=mesh(helpers,new T.CylinderGeometry(.965,.965,1,48,1,false,0,Math.PI),gasMaterial);gas.castShadow=false;gas.receiveShadow=false;gas.raycast=()=>{};
  const gasSlice=mesh(helpers,new T.PlaneGeometry(1.93,1),gasMaterial,0,0,.002);gasSlice.castShadow=false;gasSlice.receiveShadow=false;gasSlice.raycast=()=>{};
- const flash=mesh(helpers,new T.IcosahedronGeometry(.12,1),new T.MeshBasicMaterial({color:'#ffe4a1'}),.51,4.21,0);flash.raycast=()=>{};flash.castShadow=false;
+ // Spark: a hot core between the electrodes, two additive halos and a light that tints the chamber.
+ const flash=new T.Group();flash.position.copy(SPARK_GAP);helpers.add(flash);
+ for(const [radius,color,opacity] of [[.055,'#ffffff',1],[.2,'#ffe7a3',.75],[.5,'#ffd21f',.32]] as const){
+  const glow=mesh(flash,new T.SphereGeometry(radius,20,12),new T.MeshBasicMaterial({color,transparent:opacity<1,opacity,blending:opacity<1?T.AdditiveBlending:T.NormalBlending,depthWrite:false}));
+  glow.castShadow=false;glow.receiveShadow=false;glow.raycast=()=>{};
+ }
+ // The light stays in the scene at zero intensity, so toggling the spark never recompiles shaders.
+ const sparkLight=new T.PointLight('#ffc45c',0,3.2,1.6);sparkLight.position.copy(SPARK_GAP);root.add(sparkLight);
  const dots=Array.from({length:14},()=>{const dot=mesh(helpers,new T.SphereGeometry(.042,8,6),new T.MeshBasicMaterial({color:'#75bcdb'}));dot.raycast=()=>{};dot.castShadow=false;return dot;});
  const floor=mesh(root,new T.CylinderGeometry(2.6,2.6,.08,64),material('#0b0d18',0,1),0,-1.42,0);floor.castShadow=false;floor.raycast=()=>{};
- const applyCut=(cut:boolean)=>{for(const mat of sectionMaterials){mat.clippingPlanes=cut?[plane]:[];mat.clipShadows=true;}};
- return {root,parts,block,piston,rod:connectingRod,crank,cam,lower,chain,path,ports,gas,gasSlice,gasMaterial,flash,dots,helpers,floor,applyCut,dispose:()=>disposeTree(root)};
+ const turbo=createTurbo(root,ports.intake.curve.getPoint(1),ports.exhaust.curve.getPoint(1),{steel,silver,dark});
+ let cutApplied:boolean|null=null;
+ const applyCut=(cut:boolean)=>{if(cut===cutApplied)return;cutApplied=cut;for(const mat of sectionMaterials){mat.clippingPlanes=cut?[plane]:[];mat.clipShadows=true;}};
+ return {root,parts,block,piston,rod:connectingRod,crank,cam,lower,chain,path,ports,gas,gasSlice,gasMaterial,flash,sparkLight,dots,helpers,floor,turbo,applyCut,dispose:()=>disposeTree(root)};
 }
 export type EngineModel=ReturnType<typeof createModel>;

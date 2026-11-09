@@ -32,3 +32,15 @@ Victor autorizou aprimorar e tornar públicos os dez projetos com HTML funcional
 ## 2026-11-08 — vídeo do canal incorporado
 
 Pedido de Victor: embed abaixo do experimento e thumbnail clicável no README. Vídeo `Cq8wFJlB6Gk`, autoria ovictorlab confirmada pelo oEmbed público. O vídeo explica o turbo. O experimento mostra a base do movimento em um motor de quatro tempos, sem simular o turbo. Player `youtube-nocookie.com`, criado só por clique, `autoplay=0`, controles nativos, referrer de origem e link direto sempre disponível. Capa local para não carregar o YouTube na abertura; layout portrait. Cabeçalho leva à seção `#video`. Identidade preservada; nenhum upload ou alteração de vídeo no canal.
+
+## 2026-11-09 — revisão: turbo, centelha, celular, câmera e SEO
+
+Pedido de Victor ("faça tudo") a partir da revisão dos dez labs. O vídeo de turbo continua (é o mais próximo publicado).
+
+- Modo **Com turbo** (aspirado/turbo): turbina no fim do escape e compressor no mesmo eixo, com duto até a admissão. Fatos só da apuração do EP312 (Garrett, consultada em 28/10/2026). Ilustrativo: sem intercooler, wastegate, pressão ou rotação real; ar mais denso indicado só pela cor. Substitui a exclusão de turbo do escopo inicial.
+- Cabeçalho deixou de dizer "Vídeo relacionado: turbo"; contexto do vídeo reescrito.
+- Centelha: núcleo, halos aditivos e luz pontual na câmara; "Ver centelha" remonta e abre o corte, onde a faísca é visível.
+- Celular: descrição da fase visível, textos ≥ 11 px, alvos ≥ 44 px, ferramentas abaixo do modelo, canvas com `touch-action: pan-y`.
+- Câmera: resize, tela cheia e mudanças de modo preservam a órbita; seleção só por toque curto num conjunto, sem pausar.
+- SEO: título com termo de busca, texto estático gerado no build (`src/content/seo.ts`) e JSON-LD VideoObject.
+- Validação: testes, build e check:pages. Sem conferência visual em navegador nesta rodada (o Chrome estava reservado a outro agente).

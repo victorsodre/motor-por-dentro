@@ -14,7 +14,7 @@
 
 ## Testes proporcionais
 
-Oito testes cobrem ciclo, comprimento da biela, válvulas, contato came/seguidor, reset, relógio, rig e enquadramento. Integração para catálogo/nós do asset e retorno ao estado inicial. Fluxo de navegador para carregar, interagir e resetar. Não criar testes que apenas repitam o texto destes guias.
+Dezesseis testes cobrem ciclo, comprimento da biela, válvulas, contato came/seguidor, reset, relógio, rig, enquadramento, câmera em mudança de aspecto, turbo (continuidade, duto e enquadramento), centelha e o HTML estático/JSON-LD. Integração para catálogo/nós do asset e retorno ao estado inicial. Fluxo de navegador para carregar, interagir e resetar. Não criar testes que apenas repitam o texto destes guias.
 
 ## Rotina após lançamento
 
@@ -38,8 +38,10 @@ Usar a combinação de qualidade, uso e custo de manutenção para ajustar o pr�
 
 Não animar pistão e válvulas com relógios separados. Ao mudar raio, biela, altura da câmara ou levantamento, repetir os testes de articulação e folga. Revisar contato do came, relação 2:1 e poses em 0°, 90°, 180°, 270°, 360°, 450°, 540°, 630° e 720°.
 
+Câmera: só Reenquadrar, R e reset voltam à vista inicial; resize, tela cheia, separar, isolar e turbo mantêm a direção do usuário (`aspectRescale`). Toque curto em vazio não desmarca nem pausa; arrasto, pinça e rolagem nunca selecionam. Rodinha rola a página; Ctrl/⌘ + rodinha aproxima. No celular, textos ≥ 11 px e alvos ≥ 44 px.
+
 Separar → montar deve preservar o ângulo. Girar e escolher uma fase remontam antes de movimentar. Reset retorna a 90°, parado e em corte. R reenquadra; Escape fecha detalhe ou diálogo. Mudança de preferência para movimento reduzido pausa a animação.
 
-O vídeo de turbo é relacionado; não atribuir ao aplicativo um módulo de turbo ou diesel inexistente. Variações de RPM, temperatura, emissões e diagnóstico precisam de escopo e fontes próprios.
+O modo Com turbo é um esquema: não atribuir a ele pressão, rotação, intercooler, wastegate ou ganho de força. Diesel não existe no aplicativo. Fatos do turbo só com as fontes do EP312 (Garrett). Variações de RPM, temperatura, emissões e diagnóstico precisam de escopo e fontes próprios.
 
 A cobertura móvel atual usa viewports no Chrome do Mac, sem telefone físico. Registrar aparelho e navegador quando houver ensaio real. Reversão por novo checkout/release do commit anterior; não resetar alterações de trabalho ou reescrever histórico compartilhado.

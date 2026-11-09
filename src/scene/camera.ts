@@ -22,3 +22,9 @@ export function fit(camera: PerspectiveCamera, bounds: Box3, direction: Vector3)
   camera.position.copy(pose.position); camera.lookAt(pose.center); camera.updateProjectionMatrix();
   return pose.center;
 }
+
+/** Distance factor that keeps the same framing when only the viewport aspect changes. */
+export function aspectRescale(bounds: Box3, direction: Vector3, fromAspect: number, toAspect: number, fov = 38) {
+  const distance = (aspect: number) => { const pose = framing(bounds, aspect, direction, fov); return pose.position.distanceTo(pose.center); };
+  return distance(toAspect) / distance(fromAspect);
+}

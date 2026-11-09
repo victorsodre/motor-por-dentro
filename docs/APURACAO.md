@@ -1,6 +1,6 @@
 # Apuração e contrato educativo — 07/11/2026
 
-Recorte: um cilindro de motor de quatro tempos, ignição por centelha, comando no cabeçote e duas válvulas verticais. Geometria e acionamento autorais; não é réplica de motor do Fusquinha, Briggs, Honda ou Wright. Turbo e diesel permanecem fora da versão.
+Recorte: um cilindro de motor de quatro tempos, ignição por centelha, comando no cabeçote e duas válvulas verticais. Geometria e acionamento autorais; não é réplica de motor do Fusquinha, Briggs, Honda ou Wright. Turbo só como esquema ilustrativo (seção abaixo); diesel fora da versão.
 
 ## Fontes verificadas
 
@@ -18,3 +18,9 @@ Biela de comprimento L=2,7 e raio de manivela R=0,8, em unidades ilustrativas: p
 O comando gira θ/2. Levantamento idealizado h = 0,08 sen²(θ − início da fase) somente durante admissão/escape. Perfil de came autoral obtido pela envoltória de seguidor plano: no referencial girado, o contato está em (-dh/dφ, -Rbase-h), com Rbase=0,65 e φ=θ/2. Teste numérico verifica contato em todo o ciclo; não é um projeto para fabricação.
 
 Cores/partículas indicam caminho e etapa; não medem composição ou fluxo. Velocidade é didática, não RPM real. Desmontagem congela a fase e desloca grupos a partir da pose original; não é procedimento de manutenção. Sem cálculo de torque, atrito, lubrificação, resfriamento, emissões ou eficiência.
+
+## Turbo ilustrativo — 09/11/2026
+
+Fontes: as da apuração do vídeo EP312, consultadas em 28/10/2026. [Garrett — What Is a Turbo](https://www.garrettmotion.com/knowledge-center-category/oem/what-is-a-turbo-and-how-does-it-work/): o gás de escape gira a turbina, que move o compressor por um eixo. [Garrett — Performance Catalog vol. 8, p. 5](https://www.garrettmotion.com/wp-content/uploads/2018/05/Catalog-Volume-8_digital.pdf): o ar comprimido é mais denso e permite queimar mais combustível.
+
+Na cena: turbina na saída do escape, compressor no mesmo eixo e duto até a admissão. A rotação acompanha o virabrequim numa razão didática (3:1), não a real; partículas e cor mais forte da carga indicam o caminho e o ar mais denso, sem medir pressão ou vazão. Ficam de fora: intercooler, wastegate, atraso do turbo, pressão, temperatura e ganho de força. O esquema não reproduz nenhum turbo comercial.

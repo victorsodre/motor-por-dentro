@@ -6,7 +6,7 @@
 
 **Como o movimento dentro do cilindro chega ao eixo?**
 
-Um cilindro de um motor quatro tempos de tipo declarado, com pistão, biela, virabrequim e válvulas. Turbo e alimentação diesel ficam em módulos posteriores, com sua própria apuração.
+Um cilindro de um motor quatro tempos de tipo declarado, com pistão, biela, virabrequim e válvulas. Um modo **Com turbo** mostra, como esquema, turbina e compressor no mesmo eixo; alimentação diesel fica para um módulo posterior, com apuração própria.
 
 Direção e autoria editorial: **Victor Sodré / ovictorlab**. [Site](https://ovictorlab.com/) · [Referência Fusquinha](https://victorsodre.github.io/fusquinha/) · [Repositório](https://github.com/victorsodre/motor-por-dentro).
 
@@ -16,7 +16,7 @@ Direção e autoria editorial: **Victor Sodré / ovictorlab**. [Site](https://ov
 
 **[Como o turbo pode quase dobrar a força do motor 1.0? (até quase 300 mil voltas por minuto)](https://www.youtube.com/watch?v=Cq8wFJlB6Gk)**
 
-O vídeo explica o turbo. O experimento mostra a base do movimento em um motor de quatro tempos, sem simular o turbo.
+O vídeo explica o turbo. O experimento mostra a base dele, o ciclo de quatro tempos; no modo Com turbo, um esquema simplificado mostra o gás de escape girando a turbina e o compressor empurrando ar para a admissão.
 
 O player incorporado fica [na página do experimento](https://victorsodre.github.io/motor-por-dentro/#video), com carregamento por clique e sem reprodução automática.
 
@@ -42,7 +42,7 @@ No YouTube, o Short sobre ar no sistema diesel tinha 7.858 visualizações e o d
 
 Motor educativo de quatro tempos, ignição por centelha e comando no cabeçote. Oito conjuntos autorais, um controle de 0–720°, quatro fases, três velocidades didáticas, corte, desmontagem reversível e pausa. Pistão, biela, eixo, cames e válvulas derivam do mesmo ângulo.
 
-Busca, seleção na lista/cena, isolamento, foco, tour, malha, tela cheia e PNG 16:9/9:16 completam a exploração. O vídeo de turbo é um tema relacionado do canal; turbo e diesel não fazem parte do mecanismo desta versão.
+Busca, seleção na lista/cena, isolamento, foco, tour, malha, tela cheia e PNG 16:9/9:16 completam a exploração. O modo Com turbo é ilustrativo (sem intercooler, wastegate, pressão ou rotação real); diesel não faz parte desta versão.
 
 ## Executar
 

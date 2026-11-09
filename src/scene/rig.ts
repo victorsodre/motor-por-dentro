@@ -1,8 +1,9 @@
 import * as T from 'three';
 import type {EngineState,Port} from '../simulation/engine.ts';
 import type {EngineModel} from './model.ts';
+import {boostFlow,chargeOpacity,turboSpin} from '../simulation/turbo.ts';
 const matrix=new T.Matrix4(),quaternion=new T.Quaternion(),scale=new T.Vector3(1,1,1);
-export function applyEngine(model:EngineModel,state:EngineState,cut:boolean,explode:number){
+export function applyEngine(model:EngineModel,state:EngineState,cut:boolean,explode:number,turbo=false){
  const amount=Math.min(1,Math.max(0,explode));
  for(const part of model.parts){part.group.position.set(part.offset[0],part.offset[1],part.offset[2]).multiplyScalar(amount);part.group.rotation.set(0,0,0);}
  model.piston.position.y+=state.pistonY;
@@ -21,8 +22,13 @@ export function applyEngine(model:EngineModel,state:EngineState,cut:boolean,expl
  model.gas.scale.y=state.gasHeight;model.gas.position.y=4.35-state.gasHeight/2;
  model.gasSlice.scale.y=state.gasHeight;model.gasSlice.position.y=model.gas.position.y;
  model.gas.rotation.y=Math.PI/2;model.gasMaterial.color.set(state.phase==='power'?'#ef7d42':state.phase==='exhaust'?'#a8a8a2':'#72b3d6');
- model.gasMaterial.opacity=state.phase==='power'?.28:state.phase==='compression'?.22:.15;
- model.flash.visible=state.spark>0;model.flash.scale.setScalar(Math.max(.01,state.spark));
+ model.gasMaterial.opacity=chargeOpacity(state.phase,turbo);
+ model.flash.visible=state.spark>0;model.flash.scale.setScalar(.4+.6*state.spark);model.sparkLight.intensity=model.helpers.visible?state.spark*6:0;
+ const boosted=turbo&&amount===0;model.turbo.group.visible=boosted;
+ if(boosted){
+  model.turbo.rotor.rotation.z=turboSpin(state.angle);
+  model.turbo.dots.forEach((dot,i,all)=>dot.position.copy(model.turbo.duct.getPointAt(boostFlow(state.angle,i,all.length))));
+ }
  for(let i=0;i<model.dots.length;i++){
   const dot=model.dots[i]!;dot.visible=state.intakeLift>.002||state.exhaustLift>.002;
   const port=state.phase==='exhaust'?'exhaust':'intake';const t=(state.angle/180*2+i/model.dots.length)%1;
