@@ -2,7 +2,7 @@
 
 **[Abrir a experiência →](https://victorsodre.github.io/motor-por-dentro/)** · [Os 10 experimentos](docs/COLECAO.md) · [Publicação e manutenção](docs/PUBLICACAO.md)
 
-[![Motor por dentro — captura real da experiência](public/share.png)](https://victorsodre.github.io/motor-por-dentro/)
+[![Motor por dentro — captura real da experiência](public/share.jpg)](https://victorsodre.github.io/motor-por-dentro/)
 
 **Como o movimento dentro do cilindro chega ao eixo?**
 
