@@ -44,3 +44,11 @@ Pedido de Victor ("faça tudo") a partir da revisão dos dez labs. O vídeo de t
 - Câmera: resize, tela cheia e mudanças de modo preservam a órbita; seleção só por toque curto num conjunto, sem pausar.
 - SEO: título com termo de busca, texto estático gerado no build (`src/content/seo.ts`) e JSON-LD VideoObject.
 - Validação: testes, build e check:pages. Sem conferência visual em navegador nesta rodada (o Chrome estava reservado a outro agente).
+
+## 09/11/2026 — segunda rodada
+
+- Número do cabeçalho ("LAB", "EXPERIMENTO") vem de `labNumber('motor-por-dentro')` do kit, igual ao menu da coleção (hoje 07). Link do topo padronizado: "Ver o vídeo".
+- Dica de mouse só com `pointer: fine`; dica de toque só com `pointer: coarse`; nenhuma dica de giro quando a cena falha.
+- "Separar" e "Ver centelha" ficam juntos (no celular não sobra "Ver centelha" com um traço solto). Separar, Ver centelha, Aspirado, Com turbo e o controle de separação ficam desabilitados se a cena falhar ou antes das peças carregarem.
+- Desktop: todos os textos ≥ 11 px (rodapé, marcadores de fase, modo da cena, linha do tempo, ar na admissão, nota do mecanismo e demais). Ferramentas de câmera logo abaixo de Motor/Por dentro, para não ficarem sob o painel em telas de 1000–1300 px.
+- Validação visual no Chromium headless (Playwright) a 1440×900, 1280×800, 1000×800, 1920×1080 e 390×844, inclusive com WebGL bloqueado.
